@@ -49,6 +49,7 @@ def rescale(data, times, baseline, mode='mean', copy=True, verbose=None):
         power = [power - mean(power_baseline)] / std(power_baseline)).
         logratio is the same an mean but in log-scale, zlogratio is the
         same as zscore but data is rendered in log-scale first.
+        percent corresponds to (data - mean) / mean.
     copy : bool
         Whether to return a new instance or modify in place.
     verbose : bool, str, int, or None
